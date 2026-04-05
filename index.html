@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()">
+    
+    <!-- SEO -->
+    <title>$FACT - The Factual Meme Coin | 100% True, 0% Utility</title>
+    <meta name="description" content="The world's first factually accurate meme coin. Zero utility, infinite facts.">
+    <meta name="keywords" content="meme coin, crypto, facts, fictional">
+    <meta name="author" content="FACT Team">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="$FACT - The Factual Meme Coin">
+    <meta property="og:description" content="100% True • 0% Utility • Infinite Vibes">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts - Self-hosted fallback included -->
+    <style>
+        @font-face {
+            font-family: 'Press Start 2P';
+            src: local('Press Start 2P'), local('Courier New');
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Space Grotesk';
+            src: local('Space Grotesk'), local('Segoe UI'), local('Arial');
+            font-display: swap;
+        }
+    </style>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+    
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="#" class="logo" aria-label="FACT Coin Home">📊 $FACT</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links" id="nav-links" role="menubar">
+            <li role="none"><a href="#about" role="menuitem">Facts</a></li>
+            <li role="none"><a href="#tokenomics" role="menuitem">Tokenomics</a></li>
+            <li role="none"><a href="#roadmap" role="menuitem">Roadmap</a></li>
+            <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
+            <li role="none"><a href="#community" role="menuitem">Community</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="floating-coin coin-1" aria-hidden="true">📈</div>
+            <div class="floating-coin coin-2" aria-hidden="true">🚀</div>
+            <div class="floating-coin coin-3" aria-hidden="true">💎</div>
+            <div class="floating-coin coin-4" aria-hidden="true">🌙</div>
+            
+            <div class="hero-content">
+                <h1 id="hero-heading" class="glitch" data-text="THE FACTUAL MEME COIN">THE FACTUAL MEME COIN</h1>
+                <p class="hero-subtitle">100% True • 0% Utility • Infinite Vibes</p>
+                <p class="hero-description">
+                    The world's first meme coin based entirely on verifiable facts. 
+                    We have no roadmap, no utility, and no promises—just cold, hard, 
+                    absolutely real facts. Like: "The sky is blue" and "Water is wet."
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" data-action="buy" type="button">BUY $FACT</button>
+                    <button class="btn btn-secondary" data-action="chart" type="button">VIEW CHART</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee" role="region" aria-label="Scrolling facts">
+            <div class="marquee-content">
+                <span class="marquee-item">🚀 FACT #1: WE EXIST</span>
+                <span class="marquee-item">📊 FACT #2: THIS IS A WEBSITE</span>
+                <span class="marquee-item">💎 FACT #3: YOU'RE READING THIS</span>
+                <span class="marquee-item">🌙 FACT #4: TO THE MOON IS A DIRECTION</span>
+                <span class="marquee-item">🚀 FACT #1: WE EXIST</span>
+                <span class="marquee-item">📊 FACT #2: THIS IS A WEBSITE</span>
+                <span class="marquee-item">💎 FACT #3: YOU'RE READING THIS</span>
+                <span class="marquee-item">🌙 FACT #4: TO THE MOON IS A DIRECTION</span>
+            </div>
+        </div>
+
+        <div class="stats-bar" role="region" aria-label="Token statistics">
+            <div class="stat-item">
+                <span class="stat-number" id="market-cap" data-target="420000" data-prefix="$" data-suffix="M">$0.00</span>
+                <span class="stat-label">Market Cap (Real)</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="holders" data-target="69420" data-prefix="" data-suffix="">0</span>
+                <span class="stat-label">Holders (Probably)</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">∞</span>
+                <span class="stat-label">Facts Verified</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">0</span>
+                <span class="stat-label">Utilities</span>
+            </div>
+        </div>
+
+        <section id="about" class="section" aria-labelledby="facts-heading">
+            <h2 id="facts-heading" class="section-title glitch" data-text="VERIFIED FACTS">VERIFIED FACTS</h2>
+            <div class="facts-grid">
+                <article class="fact-card">
+                    <span class="fact-icon" aria-hidden="true">✅</span>
+                    <h3>FACT #001</h3>
+                    <p>We have a website. This is it. You're looking at it right now. This is a verifiable truth that can be confirmed by your eyeballs.</p>
+                </article>
+                <article class="fact-card">
+                    <span class="fact-icon" aria-hidden="true">✅</span>
+                    <h3>FACT #002</h3>
+                    <p>Gravity works. If you drop your $FACT tokens, they will fall to the ground (unless you're in space, in which case, why are you trading crypto?).</p>
+                </article>
+                <article class="fact-card">
+                    <span class="fact-icon" aria-hidden="true">✅</span>
+                    <h3>FACT #003</h3>
+                    <p>1 + 1 = 2. This mathematical certainty is the foundation of our tokenomics. We have math on our side.</p>
+                </article>
+                <article class="fact-card">
+                    <span class="fact-icon" aria-hidden="true">✅</span>
+                    <h3>FACT #004</h3>
+                    <p>The Earth is round (or oblate spheroid if you want to be technical). Unlike flat coins, our facts have dimension.</p>
+                </article>
+                <article class="fact-card">
+                    <span class="fact-icon" aria-hidden="true">✅</span>
+                    <h3>FACT #005</h3>
+                    <p>Dogs are good boys and girls. This is scientifically proven to increase serotonin levels when viewed.</p>
+                </article>
+                <article class="fact-card">
+                    <span class="fact-icon" aria-hidden="true">✅</span>
+                    <h3>FACT #006</h3>
+                    <p>Pizza is delicious. This is not an opinion, it is a fact backed by millions of taste tests worldwide.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="tokenomics" class="section tokenomics" aria-labelledby="tokenomics-heading">
+            <h2 id="tokenomics-heading" class="section-title glitch" data-text="TOKENOMICS">TOKENOMICS</h2>
+            <div class="tokenomics-grid">
+                <div class="tokenomics-item">
+                    <div class="tokenomics-value">1B</div>
+                    <div class="tokenomics-label">Total Supply</div>
+                </div>
+                <div class="tokenomics-item">
+                    <div class="tokenomics-value">50%</div>
+                    <div class="tokenomics-label">Locked Forever</div>
+                </div>
+                <div class="tokenomics-item">
+                    <div class="tokenomics-value">30%</div>
+                    <div class="tokenomics-label">Community</div>
+                </div>
+                <div class="tokenomics-item">
+                    <div class="tokenomics-value">20%</div>
+                    <div class="tokenomics-label">Dev (We Eat)</div>
+                </div>
+                <div class="tokenomics-item">
+                    <div class="tokenomics-value">0%</div>
+                    <div class="tokenomics-label">Tax</div>
+                </div>
+                <div class="tokenomics-item">
+                    <div class="tokenomics-value">100%</div>
+                    <div class="tokenomics-label">Facts</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="section" aria-labelledby="roadmap-heading">
+            <h2 id="roadmap-heading" class="section-title glitch" data-text="ROADMAP">ROADMAP</h2>
+            <div class="roadmap" role="list">
+                <div class="roadmap-item" role="listitem">
+                    <div class="roadmap-dot" aria-hidden="true"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-phase">PHASE 1: LAUNCH</div>
+                        <h3>The Big Bang</h3>
+                        <ul>
+                            <li>Create website (Done!)</li>
+                            <li>Think of facts (Done!)</li>
+                            <li>Make token (Soon™)</li>
+                            <li>Tweet about it</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item" role="listitem">
+                    <div class="roadmap-dot" aria-hidden="true"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-phase">PHASE 2: GROWTH</div>
+                        <h3>Fact Expansion</h3>
+                        <ul>
+                            <li>More facts verified</li>
+                            <li>Meme competition</li>
+                            <li>Partner with encyclopedia</li>
+                            <li>Merch (Fact T-shirts)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item" role="listitem">
+                    <div class="roadmap-dot" aria-hidden="true"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-phase">PHASE 3: MOON</div>
+                        <h3>Universal Truth</h3>
+                        <ul>
+                            <li>Facts become laws of physics</li>
+                            <li>Aliens buy $FACT</li>
+                            <li>Reality is rewritten</li>
+                            <li>Profit (maybe)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item" role="listitem">
+                    <div class="roadmap-dot" aria-hidden="true"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-phase">PHASE 4: ???</div>
+                        <h3>Beyond Facts</h3>
+                        <ul>
+                            <li>Achieve singularity</li>
+                            <li>Become the truth</li>
+                            <li>Exist in all timelines</li>
+                            <li>Buy lambo with facts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section" aria-labelledby="faq-heading">
+            <h2 id="faq-heading" class="section-title glitch" data-text="FAQ">FAQ</h2>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Is this a real cryptocurrency?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>It's a real website about a fictional cryptocurrency. That's a fact. Whether it becomes real depends on how much you believe in the power of facts.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>What makes $FACT different from other meme coins?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Unlike other coins that promise utility, we promise facts. Facts don't change (usually). Facts are reliable. Facts are... factual.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Can I get rich buying $FACT?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Fact: Most meme coin investors lose money. Fact: Some get rich. Fact: We don't know which group you'll be in. That's a probability, not a guarantee.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Is the team doxxed?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>The team consists of verified facts. Fact #1: We exist. Fact #2: We made this. Fact #3: That's all you need to know.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Where can I buy $FACT?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Currently, $FACT exists only in the realm of imagination and this website. If there's enough demand, we might actually create it. That's a conditional fact.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section id="community" class="section community" aria-labelledby="community-heading">
+            <h2 id="community-heading" class="section-title glitch" data-text="JOIN THE FACTS">JOIN THE FACTS</h2>
+            <p class="community-text">
+                Be part of the most factually accurate community in crypto. 
+                We don't promise gains, we promise truth.
+            </p>
+            <div class="social-links">
+                <button class="social-btn social-twitter" data-platform="Twitter" aria-label="Twitter placeholder - click for confetti" type="button">
+                    <span aria-hidden="true">🐦</span>
+                </button>
+                <button class="social-btn social-discord" data-platform="Discord" aria-label="Discord placeholder - click for confetti" type="button">
+                    <span aria-hidden="true">💬</span>
+                </button>
+                <button class="social-btn social-telegram" data-platform="Telegram" aria-label="Telegram placeholder - click for confetti" type="button">
+                    <span aria-hidden="true">✈️</span>
+                </button>
+                <button class="social-btn social-reddit" data-platform="Reddit" aria-label="Reddit placeholder - click for confetti" type="button">
+                    <span aria-hidden="true">🤖</span>
+                </button>
+            </div>
+            <p class="social-disclaimer">* Social links are placeholders. Click them for confetti!</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="legal-section">
+                <h3>📜 Factual Legal Notice</h3>
+                <p class="disclaimer">
+                    <strong>$FACT is a fictional meme coin concept created for entertainment and educational purposes only.</strong> 
+                    This website does not represent a real cryptocurrency, blockchain project, or investment opportunity. 
+                    There is no token, no smart contract, and no actual monetary value associated with anything displayed here.
+                </p>
+                <p class="disclaimer">
+                    <strong>Trademark Notice:</strong> Any references to Twitter (🐦), Discord (💬), Telegram (✈️), Reddit (🤖), 
+                    or other platforms are purely illustrative. These companies are not affiliated with, endorsing, or associated 
+                    with this project in any way. All trademarks belong to their respective owners. The social buttons above are 
+                    non-functional placeholders that trigger confetti animations.
+                </p>
+                <p class="disclaimer">
+                    <strong>No Financial Advice:</strong> Nothing on this website constitutes financial, investment, legal, or 
+                    tax advice. Cryptocurrency investments carry substantial risk of loss. This site is a parody and should be 
+                    treated as such. If you believed this was real, please enjoy the confetti and remember: verify before you buy.
+                </p>
+                <p class="disclaimer">
+                    <strong>Fair Use & Parody:</strong> This website falls under fair use as a parody and commentary on 
+                    cryptocurrency culture. No infringement is intended. All "facts" presented are either common knowledge, 
+                    subjective opinions stated as facts for comedic effect, or outright fabrications clearly marked as fictional.
+                </p>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <p class="footer-text">© 2026 $FACT COIN • ALL FACTS RESERVED</p>
+            <p class="footer-subtext">
+                Made with <span aria-label="love">💜</span> and verifiable truths
+            </p>
+            <p class="footer-version">v1.0.0 | No Cookies | No Tracking | 100% Static</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js" defer></script>
+</body>
+</html>
